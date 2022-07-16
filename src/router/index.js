@@ -9,7 +9,7 @@ import Register from '../views/Register';
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
