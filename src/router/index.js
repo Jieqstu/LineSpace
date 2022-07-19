@@ -13,30 +13,34 @@ const routes = [
     component: Home
   },
   {
-    path: '/friends',
+    path: '/friends/',
     name: 'friends',
     component: Friends
   },
   {
-    path: '/moments',
+    path: '/moments/:userId/',
     name: 'moments',
     component: Moments
   },
   {
-    path: '/login',
+    path: '/login/',
     name: 'login',
     component: Login
   },
   {
-    path: '/register',
+    path: '/register/',
     name: 'register',
     component: Register
   },
   {
-    path: '/404',
+    path: '/404/',
     name: '404',
     component: NotFound
   },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/404/'
+  }
 ]
 
 const router = createRouter({
