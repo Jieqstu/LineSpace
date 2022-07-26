@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-9">
                     <div class="username">{{ user.username }}</div>
-                    <div class="follower">Follower: {{ user.followerscount }}</div>
+                    <div class="follower">Follower: {{ user.followerCount }}</div>
                     <button @click="follow" v-if="!user.is_followed" type="button" class="btn btn-primary btn-sm">Follow</button>
                     <button @click="unfollow" v-if="user.is_followed" type="button" class="btn btn-primary btn-sm">Unfollow</button>
                 </div>

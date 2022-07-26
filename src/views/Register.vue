@@ -42,8 +42,6 @@ export default {
     let password_confirm = ref('');
     let error_message = ref('');
 
-    console.log(store, router);
-
     const register = () => {
       error_message.value = "";
       $.ajax({
